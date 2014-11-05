@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Test Gems
 gem 'rspec-rails', group: :test
 gem 'capybara', group: :test
+gem 'rspec-collection_matchers', group: :test
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
