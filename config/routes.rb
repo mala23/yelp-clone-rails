@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   
+  devise_for :users
+
+  root to: "restaurants#index"
+
   resources :restaurants do
     resources :reviews
   end
 
-  root to: "restaurants#index"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
