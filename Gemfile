@@ -5,6 +5,8 @@ gem 'rspec-rails', group: :test
 gem 'capybara', group: :test
 gem 'rspec-collection_matchers', group: :test
 gem 'launchy', group: :test
+gem 'poltergeist', group: :test
+gem 'database_cleaner', group: :test
 
 
 # User Authentication

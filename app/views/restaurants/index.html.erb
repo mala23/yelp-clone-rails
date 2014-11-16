@@ -16,6 +16,7 @@
             <li>
               <%= review.thoughts %>, <strongt><%= review.rating %></strong>/5
             </li>
+            <p><% review.endorsements.count %> endorsements</p>
           <% end %>
         </ul>
       <% else %>
