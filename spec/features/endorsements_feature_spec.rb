@@ -9,9 +9,9 @@ describe 'endorsing reviews' do
       kfc.reviews.create(rating: 3, thoughts: 'It was an abomination')
     end
 
-    it 'a user can endorse a review, whicht updates the review endorsement count' do
+    it 'a user can endorse a review, whicht updates the review endorsement count', js: true do
       visit '/restaurants'
-      click_link 'Endorse KFC'
+      click_link 'Endorse'
       expect(page).to have_content('1 endorsment')
     end
   end
