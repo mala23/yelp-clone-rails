@@ -15,7 +15,15 @@
           <% restaurant.reviews.each do |review| %>
             <li>
               <%= review.thoughts %>, <strongt><%= review.rating %></strong>/5
-              <span class="endorsements_count"> <%= review.endorsements.count %> </span> endorsements
+              <p>
+                <%= link_to "Endorse", review_endorsements_path(review), class: 'endorsements-link' %>
+                <span class="endorsements_count"> <%= review.endorsements.count %> </span>
+                <% if review.endorsements.count < 2 %>
+                  endorsement
+                <% else %>
+                  endorsements
+                <% end %>
+              </p>
             </li>
           <% end %>
         </ul>

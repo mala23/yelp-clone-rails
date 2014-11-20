@@ -12,7 +12,7 @@ describe 'endorsing reviews' do
     it 'a user can endorse a review, whicht updates the review endorsement count', js: true do
       visit '/restaurants'
       click_link 'Endorse'
-      expect(page).to have_content('1 endorsment')
+      expect(page).to have_content('1 endorsement')
     end
   end
 
