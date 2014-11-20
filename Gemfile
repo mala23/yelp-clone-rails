@@ -8,7 +8,8 @@ gem 'launchy', group: :test
 gem 'poltergeist', group: :test
 gem 'database_cleaner', group: :test
 
-
+# Image Uploads
+gem 'paperclip'
 # User Authentication
 gem 'devise'
 gem 'omniauth-facebook'
